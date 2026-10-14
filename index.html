@@ -23,11 +23,6 @@ html{color-scheme:light;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 8
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--f);-webkit-font-smoothing:antialiased}
 a{color:inherit}
-  section#slider {
-    padding: 0px !important;
-}p.fc2 a {
-    line-break: anywhere;
-}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 24px;background:var(--red);color:#fff;font-weight:700;font-size:.92rem;text-decoration:none;border-radius:4px;border:2px solid var(--red);transition:background .15s}
 .btn:hover{background:var(--red2);border-color:var(--red2)}
@@ -105,7 +100,7 @@ details p{margin:10px 0 0;color:var(--muted);max-width:64ch}
 @media (prefers-reduced-motion:reduce){.track{transition:none}}
 @media (max-width:820px){.fgrid{grid-template-columns:1fr 1fr}.fb{grid-column:1/-1}.sb{display:none}}
 .ft{background:var(--blk);color:#C4C8D0;padding:48px 0 22px;font-size:.9rem}
-.fgrid{display:grid;grid-template-columns:4.5fr 4fr 7fr;gap:32px;padding-bottom:32px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:32px;padding-bottom:32px}
 .ft h4{font:700 .85rem var(--f);color:#fff;margin:0 0 14px;text-transform:uppercase;letter-spacing:.08em}
 .ft ul{list-style:none;margin:0;padding:0}.ft li{margin:0 0 9px}
 .ft a{color:#C4C8D0;text-decoration:none}.ft a:hover{color:#fff;text-decoration:underline}
@@ -118,6 +113,12 @@ details p{margin:10px 0 0;color:var(--muted);max-width:64ch}
 .fbot p{margin:0 0 8px;max-width:none}.fbot b{color:#fff}
 .cp{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .soc2{display:flex;gap:16px}
+section#slider{padding:0}
+html,body{overflow-x:clip;max-width:100%}
+img,svg{max-width:100%}
+.fgrid>div{min-width:0}
+.ft a,.fc2,.ft address{overflow-wrap:anywhere;word-break:break-word}
+@media (max-width:820px){.fgrid{gap:28px 20px}.ft{font-size:.85rem}.tile .s{font-size:2.1rem}.cp{flex-direction:column}.soc2{flex-wrap:wrap}.hero h1{overflow-wrap:anywhere}.fc .btn{white-space:normal;text-align:center;line-height:1.3;padding:10px 14px}.row .btn{white-space:normal;text-align:center}.logo{white-space:nowrap}}
 @media (max-width:820px){nav{display:none}.grid2,.grid3,.rc{grid-template-columns:1fr}.fan{flex-direction:column;align-items:center}.fc,.fc.m{width:100%;max-width:320px;transform:none}.hero::before{top:60%}.hero{padding:44px 0 56px}.tile{aspect-ratio:4/3}.bar .wrap span:last-child{display:none}section{padding:48px 0}}
 </style>
 </head>
@@ -148,9 +149,9 @@ details p{margin:10px 0 0;color:var(--muted);max-width:64ch}
 <h1>Precision Engineered. XIOM Performance.</h1>
 <p class="sub">Korean-designed blades, rubbers, and gear for modern table tennis.</p>
 <div class="fan">
-<div class="fc"><div class="ic"><svg viewBox="0 0 120 150" aria-hidden="true"><use href="#rub"/></svg><img src="https://tabletennisstore.us/cdn/shop/files/butterfly-zyre-03-rubber-sheet.jpg?height=720&amp;v=1775929487" alt="Table tennis rubber sheet" width="132" height="132" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div><h3>Rubbers</h3><p>Jekyll &amp; Hyde, Omega, Vega</p><a class="btn" data-cta="jekyll_hyde" href="https://tabletennisstore.us/search?q=xiom+jekyll+hyde">Shop Rubbers</a></div>
-<div class="fc m"><div class="ic"><svg viewBox="0 0 100 150" aria-hidden="true"><use href="#blade"/></svg><img src="https://tabletennisstore.us/cdn/shop/files/butterfly-primorac-carbon-blade.jpg?height=533&amp;v=1778516448" alt="Table tennis blade" width="132" height="132" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div><h3>Blades</h3><p>Shakehand and penholder</p><a class="btn" data-cta="hero" href="https://tabletennisstore.us/collections/xiom-products">Shop XIOM at TableTennisStore.us</a></div>
-<div class="fc"><div class="ic"><svg viewBox="0 0 160 100" aria-hidden="true" style="width:92px"><use href="#shoe"/></svg><img src="https://tabletennisstore.us/cdn/shop/products/gewo-tt-super-table-tennis-shoe.jpg?height=350&amp;v=1740770710" alt="Table tennis shoes" width="132" height="132" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div><h3>Shoes &amp; Gear</h3><p>Shoes, clothing, accessories</p><a class="btn" data-cta="shoes" href="https://tabletennisstore.us/collections/shoes">Shop Gear</a></div>
+<div class="fc"><div class="ic"><svg viewBox="0 0 120 150" aria-hidden="true"><use href="#rub"/></svg><img src="https://tabletennisstore.us/cdn/shop/files/xiom-jekyll-hyde-c52-5.jpg?height=720&amp;v=1773342731" alt="XIOM Jekyll and Hyde C52.5 table tennis rubber" width="132" height="132" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div><h3>Rubbers</h3><p>Jekyll &amp; Hyde, Omega, Vega</p><a class="btn" data-cta="jekyll_hyde" href="https://tabletennisstore.us/search?q=xiom+jekyll+hyde">Shop Rubbers</a></div>
+<div class="fc m"><div class="ic"><svg viewBox="0 0 100 150" aria-hidden="true"><use href="#blade"/></svg><img src="https://tabletennisstore.us/cdn/shop/products/xiom-extreme-s-offensive-table-tennis-blade-shakehand.jpg?v=1741421876" alt="XIOM Extreme S offensive shakehand blade" width="132" height="132" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div><h3>Blades</h3><p>Shakehand and penholder</p><a class="btn" data-cta="hero" href="https://tabletennisstore.us/collections/xiom-products">Shop XIOM at TableTennisStore.us</a></div>
+<div class="fc"><div class="ic"><svg viewBox="0 0 160 100" aria-hidden="true" style="width:92px"><use href="#shoe"/></svg><img src="https://tabletennisstore.us/cdn/shop/products/xiom-footwork-18-xg-professional-table-tennis-shoe.jpg?v=1740296060" alt="XIOM Footwork 18 XG table tennis shoes" width="132" height="132" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div><h3>Shoes &amp; Gear</h3><p>Shoes, clothing, accessories</p><a class="btn" data-cta="shoes" href="https://tabletennisstore.us/collections/shoes">Shop Gear</a></div>
 </div>
 <p class="note">Checkout and fulfillment by TableTennisStore.us.</p>
 </div></div>
@@ -160,9 +161,9 @@ details p{margin:10px 0 0;color:var(--muted);max-width:64ch}
 <section id="blades"><div class="wrap">
 <div class="hd"><div><h2>XIOM Blades</h2><p class="lead">Pick the grip that matches how you play.</p></div></div>
 <div class="grid2">
-<div><div class="tile"><span class="s">Shakehand</span><svg viewBox="0 0 100 150" aria-hidden="true"><use href="#blade"/></svg><img src="https://tabletennisstore.us/cdn/shop/files/victas-black-balsa-v-7-0-shakehand-blade.jpg?height=350&amp;v=1752495979" alt="Shakehand table tennis blade" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
+<div><div class="tile"><span class="s">Shakehand</span><svg viewBox="0 0 100 150" aria-hidden="true"><use href="#blade"/></svg><img src="https://tabletennisstore.us/cdn/shop/products/xiom-mini-shakehand-table-tennis-mini-racket.jpg?v=1762922428" alt="XIOM shakehand table tennis blade" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
 <div class="cap"><h3>Shakehand Blades</h3><p>Balanced speed and feedback for confident looping and control.</p><a class="btn" data-cta="blades_sh" href="https://tabletennisstore.us/collections/blades-shakehand">Shop Shakehand Blades</a></div></div>
-<div><div class="tile"><span class="s">Penholder</span><svg viewBox="0 0 100 150" aria-hidden="true"><use href="#pen"/></svg><img src="https://tabletennisstore.us/cdn/shop/files/butterfly-viscaria-super-alc-cs-chinese-penhold-offensive-blade.jpg?height=720&amp;v=1782052987" alt="Penholder table tennis blade" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
+<div><div class="tile"><span class="s">Penholder</span><svg viewBox="0 0 100 150" aria-hidden="true"><use href="#pen"/></svg><img src="https://tabletennisstore.us/cdn/shop/products/xiom-katana-gold-japanese-penhold-blade.jpg?v=1764335886" alt="XIOM Katana Gold Japanese penhold blade" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
 <div class="cap"><h3>Penholder Blades</h3><p>Compact balance and crisp touch for close-table attack and RPB styles.</p><a class="btn" data-cta="blades_ph" href="https://tabletennisstore.us/collections/blades-chinese-penhold">Shop Penholder Blades</a></div></div>
 </div></div></section>
 
@@ -180,11 +181,11 @@ details p{margin:10px 0 0;color:var(--muted);max-width:64ch}
 <section id="gear"><div class="wrap">
 <div class="hd"><div><h2>Shoes, Clothing &amp; Accessories</h2><p class="lead">Everything around the blade, so your setup is complete.</p></div></div>
 <div class="grid3">
-<div><div class="tile"><span class="s">Shoes</span><svg viewBox="0 0 160 100" aria-hidden="true"><use href="#shoe"/></svg><img src="https://tabletennisstore.us/cdn/shop/files/butterfly-lezoline-unizes-ii-shoes-navy.jpg?height=720&amp;v=1765510359" alt="Table tennis shoes" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
+<div><div class="tile"><span class="s">Shoes</span><svg viewBox="0 0 160 100" aria-hidden="true"><use href="#shoe"/></svg><img src="https://tabletennisstore.us/cdn/shop/products/xiom-footwork-18-xg-professional-table-tennis-shoe.jpg?v=1740296060" alt="XIOM Footwork 18 XG table tennis shoes" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
 <div class="cap"><h3>Shoes</h3><p>Lightweight stability and traction for quick lateral movement.</p><a class="btn" data-cta="shoes" href="https://tabletennisstore.us/collections/shoes">Shop Shoes</a></div></div>
-<div><div class="tile"><span class="s">Clothing</span><svg viewBox="0 0 140 130" aria-hidden="true"><use href="#tee"/></svg><img src="https://tabletennisstore.us/cdn/shop/files/gewo-shirt-mattia.png?v=1786640142" alt="Table tennis shirt" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
+<div><div class="tile"><span class="s">Clothing</span><svg viewBox="0 0 140 130" aria-hidden="true"><use href="#tee"/></svg><img src="https://tabletennisstore.us/cdn/shop/products/xiom-action-fit-mpt-1-mens-table-tennis-shirt-_full-_front-_view.jpg?v=1741191500" alt="XIOM Action Fit table tennis shirt" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
 <div class="cap"><h3>Clothing</h3><p>Breathable performance apparel for practice and match day.</p><a class="btn" data-cta="clothing" href="https://tabletennisstore.us/collections/clothing">Shop Clothing</a></div></div>
-<div><div class="tile"><span class="s">Accessories</span><svg viewBox="0 0 160 110" aria-hidden="true"><use href="#bag"/></svg><img src="https://tabletennisstore.us/cdn/shop/files/gewo-mini-paddle-keyring.jpg?height=533&amp;v=1773938908" alt="Table tennis accessories" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
+<div><div class="tile"><span class="s">Accessories</span><svg viewBox="0 0 160 110" aria-hidden="true"><use href="#bag"/></svg><img src="https://tabletennisstore.us/cdn/shop/products/xiom-table-tennis-racket-grinding-sticks.jpg?v=1740296256" alt="XIOM table tennis racket grinding sticks" width="640" height="480" loading="lazy" onload="this.parentNode.querySelector('svg').style.display='none'" onerror="this.remove()"></div>
 <div class="cap"><h3>Accessories</h3><p>Bags, edge tape, glue, and essentials to complete your setup.</p><a class="btn" data-cta="accessories" href="https://tabletennisstore.us/collections/table-tennis-accessories">Shop Accessories</a></div></div>
 </div></div></section>
 
